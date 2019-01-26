@@ -100,7 +100,7 @@ main() {
   # Install ALL THE THINGS!
   update_hostname
   install_requirements
-  config_network_manager
+  #config_network_manager
   install_docker
   install_hassio
 

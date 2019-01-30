@@ -62,7 +62,10 @@ install_requirements() {
 # ------------------------------------------------------------------------------
 install_docker() {
   echo "Installing Docker..."
-  apt-get install docker-ce=18.06.1~ce~3-0~raspbian
+  export VERSION=18.06 && curl -sSL get.docker.com | sh
+
+  #Options below failed: 1st - not found, 2nd - latest has issues with rpi0
+  #apt-get install docker-ce=18.06.1~ce~3-0~debian
   #curl -sSL https://get.docker.com | sh
 }
 

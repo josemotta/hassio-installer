@@ -79,6 +79,7 @@ install_hassio() {
 # ------------------------------------------------------------------------------
 config_network_manager() {
   {
+    echo "Configuring Network Manager..."
     echo -e "\n[device]";
     echo "wifi.scan-rand-mac-address=no";
     echo -e "\n[connection]";
